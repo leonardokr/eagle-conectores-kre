@@ -21,7 +21,7 @@ Bibliotecas Eagle simplificadas com modelos 3D. As bibliotecas estão o mais gen
 
 ![](img/kre-resumo.png)
 
-##### Amostra de símbolo, footprint e pacote 3D
+##### Amostra de símbolo, footprint e pacote 3D (agradecimentos e créditos à Dragos Ionescu pelo arquivo do modelo 3D)
 
 <p align="center">
 <img src="img/component/kre2p.png" width="49%">
