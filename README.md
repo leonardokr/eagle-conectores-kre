@@ -15,12 +15,24 @@ Bibliotecas Eagle simplificadas com modelos 3D. As bibliotecas estão o mais gen
 - [ ] Válvulas e Soquetes
 - [ ] Potenciômetros
 
-### Conectores KRE
-<a href="lib/Conectores_KRE.lib"><img src="https://github.com/leonardokr/leonardokr/tree/master/resources/download.svg"></a>
+<hr>
+
+### Conectores KRE 
+
 ![](img/kre-resumo.png)
-###### Amostra de símbolo, footprint e pacote 3D
-![](img/component/kre2p.png)
-![](img/component/kre8p.png)
-![](img/package/kre2p.png)
-![](img/package/kre2p-1.png)
-![](img/package/kre2p-2.png)
+
+##### Amostra de símbolo, footprint e pacote 3D
+
+<p align="center">
+<img src="img/component/kre2p.png" width="49%">
+<img src="img/component/kre8p.png" width="49%">
+<img src="img/package/kre2p.png" width="32%">
+<img src="img/package/kre2p-1.png" width="32%">
+<img src="img/package/kre2p-2.png" width="32%">
+</p>
+
+<br>
+<p align="center">
+  <a href="lib/Conectores_KRE.lib"><img width="200px" src="https://github.com/leonardokr/leonardokr/blob/master/resources/download.svg"></a>
+</p>
+<hr>
