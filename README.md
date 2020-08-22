@@ -33,6 +33,6 @@ Bibliotecas Eagle simplificadas com modelos 3D. As bibliotecas estão o mais gen
 
 <br>
 <p align="center">
-  <a href="https://raw.githubusercontent.com/leonardokr/eagle-bibliotecas-3d/master/lib/Conectores_KRE.lib" download="Conectores KRE.lib"><img width="200px" src="https://github.com/leonardokr/leonardokr/blob/master/resources/download.svg"></a>
+  <a href="download/lib/Conectores_KRE.lbr" download="Conectores KRE.lib"><img width="200px" src="https://github.com/leonardokr/leonardokr/blob/master/resources/download.svg"></a>
 </p>
 <hr>
