@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,110 +71,204 @@
 </layers>
 <library>
 <packages>
-<package name="KRE-8P" urn="urn:adsk.eagle:footprint:22383414/1">
-<pad name="1" x="-17.78" y="0" drill="1"/>
-<pad name="2" x="-12.78" y="0" drill="1"/>
-<pad name="3" x="-7.78" y="0" drill="1"/>
-<pad name="4" x="-2.78" y="0" drill="1"/>
-<pad name="5" x="2.22" y="0" drill="1"/>
-<pad name="6" x="7.22" y="0" drill="1"/>
-<pad name="7" x="12.22" y="0" drill="1"/>
-<pad name="8" x="17.22" y="0" drill="1"/>
-<wire x1="-19.78" y1="-5" x2="19.22" y2="-5" width="0.127" layer="21"/>
-<wire x1="19.22" y1="-5" x2="19.22" y2="5" width="0.127" layer="21"/>
-<wire x1="-19.78" y1="5" x2="19.22" y2="5" width="0.127" layer="21"/>
-<wire x1="-19.78" y1="-5" x2="-19.78" y2="5" width="0.127" layer="21"/>
-<text x="-3.78" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.78" y="-4" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="KRE-3P" urn="urn:adsk.eagle:footprint:22383417/1">
-<pad name="1" x="-5.08" y="0" drill="1"/>
-<pad name="2" x="-0.08" y="0" drill="1"/>
-<pad name="3" x="4.92" y="0" drill="1"/>
-<wire x1="-7.08" y1="-5" x2="6.92" y2="-5" width="0.127" layer="21"/>
-<wire x1="6.92" y1="5" x2="6.92" y2="-5" width="0.127" layer="21"/>
-<wire x1="-7.08" y1="5" x2="6.92" y2="5" width="0.127" layer="21"/>
-<wire x1="-7.08" y1="5" x2="-7.08" y2="-5" width="0.127" layer="21"/>
-<text x="-3.08" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.08" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="KRE-5P" urn="urn:adsk.eagle:footprint:22383412/1">
-<pad name="1" x="-10.16" y="0" drill="1"/>
-<pad name="2" x="-5.16" y="0" drill="1"/>
-<pad name="3" x="-0.16" y="0" drill="1"/>
-<pad name="4" x="4.84" y="0" drill="1"/>
-<pad name="5" x="9.84" y="0" drill="1"/>
-<wire x1="-12.16" y1="-5" x2="11.84" y2="-5" width="0.127" layer="21"/>
-<wire x1="11.84" y1="-5" x2="11.84" y2="5" width="0.127" layer="21"/>
-<wire x1="11.84" y1="5" x2="-12.16" y2="5" width="0.127" layer="21"/>
-<wire x1="-12.16" y1="5" x2="-12.16" y2="-5" width="0.127" layer="21"/>
-<text x="-3.16" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.16" y="-4" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="KRE-2P" urn="urn:adsk.eagle:footprint:22383418/1">
+<package name="KRE-2P" urn="urn:adsk.eagle:footprint:22383418/4" locally_modified="yes">
+<description>&lt;strong&gt;Conector KRE 2 Pinos&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a&gt;Largura: 7.6MM
+&lt;br&gt;&lt;a&gt;Comprimento: 10MM
+&lt;br&gt;&lt;a&gt;Altura: 10MM
+&lt;br&gt;&lt;a&gt;Distância entre pinos: 5.06MM</description>
 <pad name="1" x="-2.54" y="0" drill="1"/>
 <pad name="2" x="2.46" y="0" drill="1"/>
-<wire x1="4.46" y1="5" x2="4.46" y2="-5" width="0.127" layer="21"/>
-<wire x1="-4.54" y1="-5" x2="4.46" y2="-5" width="0.127" layer="21"/>
-<wire x1="-4.54" y1="5" x2="4.46" y2="5" width="0.127" layer="21"/>
-<wire x1="-4.54" y1="5" x2="-4.54" y2="-5" width="0.127" layer="21"/>
-<text x="-3.54" y="3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.54" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="5.095" y1="4.5" x2="5.095" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-5.175" y1="-3.095" x2="5.095" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-5.175" y1="4.5" x2="5.095" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-5.175" y1="4.5" x2="-5.175" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-2.413" x2="-2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.413" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.413" x2="4.318" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<text x="-4.675" y="3.135" size="1.016" layer="25">&gt;NAME</text>
+<text x="-4.675" y="1.715" size="1.016" layer="27">&gt;VALUE</text>
+<circle x="-2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="2.54" y="0" radius="0.803215625" width="0.127" layer="21"/>
 </package>
-<package name="KRE-4P" urn="urn:adsk.eagle:footprint:22383415/1">
-<pad name="1" x="-7.62" y="0" drill="1"/>
-<pad name="2" x="-2.62" y="0" drill="1"/>
-<pad name="3" x="2.38" y="0" drill="1"/>
-<pad name="4" x="7.38" y="0" drill="1"/>
-<wire x1="-9.62" y1="-5" x2="9.38" y2="-5" width="0.127" layer="21"/>
-<wire x1="9.38" y1="-5" x2="9.38" y2="5" width="0.127" layer="21"/>
-<wire x1="-9.62" y1="-5" x2="-9.62" y2="5" width="0.127" layer="21"/>
-<wire x1="-9.62" y1="5" x2="9.38" y2="5" width="0.127" layer="21"/>
-<text x="-3.62" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.62" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<package name="KRE-3P">
+<description>&lt;strong&gt;Conector KRE 3 Pinos&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a&gt;Largura: 7.6MM
+&lt;br&gt;&lt;a&gt;Comprimento: 15MM
+&lt;br&gt;&lt;a&gt;Altura: 10MM
+&lt;br&gt;&lt;a&gt;Distância entre pinos: 5.06MM</description>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="5" y="0" drill="1"/>
+<wire x1="7.635" y1="4.5" x2="7.635" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-7.715" y1="-3.095" x2="7.635" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-7.715" y1="4.5" x2="7.635" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-7.715" y1="4.5" x2="-7.715" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-6.858" y1="-2.413" x2="-5.08" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.413" x2="0" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.413" x2="5.08" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.413" x2="6.858" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.762" x2="0" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-0.762" x2="5.08" y2="-2.413" width="0.127" layer="21"/>
+<text x="-7.215" y="3.135" size="1.016" layer="25">&gt;NAME</text>
+<text x="-7.215" y="1.715" size="1.016" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="5.08" y="0" radius="0.803215625" width="0.127" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-5.08" y1="-0.762" x2="-5.08" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-5.08" y="0" radius="0.71841875" width="0.127" layer="21"/>
 </package>
-<package name="KRE-6P" urn="urn:adsk.eagle:footprint:22383411/1">
-<pad name="1" x="-12.7" y="0" drill="1"/>
-<pad name="2" x="-7.7" y="0" drill="1"/>
-<pad name="3" x="-2.7" y="0" drill="1"/>
-<pad name="4" x="2.3" y="0" drill="1"/>
-<pad name="5" x="7.3" y="0" drill="1"/>
-<pad name="6" x="12.3" y="0" drill="1"/>
-<wire x1="14.3" y1="5" x2="-14.7" y2="5" width="0.127" layer="21"/>
-<wire x1="-14.7" y1="5" x2="-14.7" y2="-5" width="0.127" layer="21"/>
-<wire x1="-14.7" y1="-5" x2="14.3" y2="-5" width="0.127" layer="21"/>
-<wire x1="14.3" y1="-5" x2="14.3" y2="5" width="0.127" layer="21"/>
-<text x="-3.7" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.7" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<package name="KRE-4P">
+<description>&lt;strong&gt;Conector KRE 4 Pinos&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a&gt;Largura: 7.6MM
+&lt;br&gt;&lt;a&gt;Comprimento: 20MM
+&lt;br&gt;&lt;a&gt;Altura: 10MM
+&lt;br&gt;&lt;a&gt;Distância entre pinos: 5.06MM</description>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<pad name="4" x="7.54" y="0" drill="1"/>
+<wire x1="10.175" y1="4.5" x2="10.175" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-10.255" y1="-3.095" x2="10.175" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-10.255" y1="4.5" x2="10.175" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-10.255" y1="4.5" x2="-10.255" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-9.398" y1="-2.413" x2="-2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.413" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.413" x2="7.62" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-2.413" x2="9.398" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-0.762" x2="7.62" y2="-2.413" width="0.127" layer="21"/>
+<text x="-9.755" y="3.135" size="1.016" layer="25">&gt;NAME</text>
+<text x="-9.755" y="1.715" size="1.016" layer="27">&gt;VALUE</text>
+<circle x="2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="7.62" y="0" radius="0.803215625" width="0.127" layer="21"/>
+<pad name="2" x="-2.54" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="-7.62" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-0.762" x2="-7.62" y2="-2.413" width="0.127" layer="21"/>
+<pad name="1" x="-7.62" y="0" drill="1" diameter="1.4224"/>
+</package>
+<package name="KRE-5P">
+<description>&lt;strong&gt;Conector KRE 5 Pinos&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a&gt;Largura: 7.6MM
+&lt;br&gt;&lt;a&gt;Comprimento: 25MM
+&lt;br&gt;&lt;a&gt;Altura: 10MM
+&lt;br&gt;&lt;a&gt;Distância entre pinos: 5.06MM</description>
+<pad name="4" x="5.08" y="0" drill="1"/>
+<pad name="5" x="10.08" y="0" drill="1"/>
+<wire x1="12.715" y1="4.5" x2="12.715" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-12.795" y1="-3.095" x2="12.715" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-12.795" y1="4.5" x2="12.715" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-12.795" y1="4.5" x2="-12.795" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-11.938" y1="-2.413" x2="0" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.413" x2="5.08" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.413" x2="10.16" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-2.413" x2="11.938" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-0.762" x2="5.08" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-0.762" x2="10.16" y2="-2.413" width="0.127" layer="21"/>
+<text x="-12.295" y="3.135" size="1.016" layer="25">&gt;NAME</text>
+<text x="-12.295" y="1.715" size="1.016" layer="27">&gt;VALUE</text>
+<circle x="5.08" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="10.16" y="0" radius="0.803215625" width="0.127" layer="21"/>
+<pad name="3" x="0" y="0" drill="1" diameter="1.4224"/>
+<wire x1="0" y1="-0.762" x2="0" y2="-2.413" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="-5.08" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-0.762" x2="-5.08" y2="-2.413" width="0.127" layer="21"/>
+<pad name="2" x="-5.08" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-10.16" y1="-0.762" x2="-10.16" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-10.16" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<pad name="1" x="-10.16" y="0" drill="1" diameter="1.4224"/>
+</package>
+<package name="KRE-6P">
+<description>&lt;strong&gt;Conector KRE 6 Pinos&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a&gt;Largura: 7.6MM
+&lt;br&gt;&lt;a&gt;Comprimento: 30MM
+&lt;br&gt;&lt;a&gt;Altura: 10MM
+&lt;br&gt;&lt;a&gt;Distância entre pinos: 5.06MM</description>
+<pad name="5" x="7.62" y="0" drill="1"/>
+<pad name="6" x="12.62" y="0" drill="1"/>
+<wire x1="15.255" y1="4.5" x2="15.255" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-15.335" y1="-3.095" x2="15.255" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-15.335" y1="4.5" x2="15.255" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-15.335" y1="4.5" x2="-15.335" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-14.478" y1="-2.413" x2="-12.7" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-2.413" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.413" x2="7.62" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-2.413" x2="12.7" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-2.413" x2="14.478" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-0.762" x2="7.62" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-0.762" x2="12.7" y2="-2.413" width="0.127" layer="21"/>
+<text x="-14.835" y="3.135" size="1.016" layer="25">&gt;NAME</text>
+<text x="-14.835" y="1.715" size="1.016" layer="27">&gt;VALUE</text>
+<circle x="7.62" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="12.7" y="0" radius="0.803215625" width="0.127" layer="21"/>
+<pad name="4" x="2.54" y="0" drill="1" diameter="1.4224"/>
+<wire x1="2.54" y1="-0.762" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<circle x="2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="-2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="-2.413" width="0.127" layer="21"/>
+<pad name="3" x="-2.54" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-7.62" y1="-0.762" x2="-7.62" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-7.62" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<pad name="2" x="-7.62" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-12.7" y1="-0.762" x2="-12.7" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-12.7" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<pad name="1" x="-12.7" y="0" drill="1" diameter="1.4224"/>
+</package>
+<package name="KRE-8P">
+<description>&lt;strong&gt;Conector KRE 8 Pinos&lt;/strong&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a&gt;Largura: 7.6MM
+&lt;br&gt;&lt;a&gt;Comprimento: 40MM
+&lt;br&gt;&lt;a&gt;Altura: 10MM
+&lt;br&gt;&lt;a&gt;Distância entre pinos: 5.06MM</description>
+<pad name="7" x="12.7" y="0" drill="1"/>
+<pad name="8" x="17.7" y="0" drill="1"/>
+<wire x1="20.335" y1="4.5" x2="20.335" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-20.415" y1="-3.095" x2="20.335" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-20.415" y1="4.5" x2="20.335" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-20.415" y1="4.5" x2="-20.415" y2="-3.095" width="0.127" layer="21"/>
+<wire x1="-19.558" y1="-2.413" x2="-17.78" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-17.78" y1="-2.413" x2="-12.7" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-2.413" x2="-7.62" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-2.413" x2="7.62" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-2.413" x2="12.7" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-2.413" x2="17.78" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-2.413" x2="19.558" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-0.762" x2="12.7" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-0.762" x2="17.78" y2="-2.413" width="0.127" layer="21"/>
+<text x="-9.755" y="3.135" size="1.016" layer="25">&gt;NAME</text>
+<text x="-9.755" y="1.715" size="1.016" layer="27">&gt;VALUE</text>
+<circle x="12.7" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="17.78" y="0" radius="0.803215625" width="0.127" layer="21"/>
+<pad name="6" x="7.62" y="0" drill="1" diameter="1.4224"/>
+<wire x1="7.62" y1="-0.762" x2="7.62" y2="-2.413" width="0.127" layer="21"/>
+<circle x="7.62" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="2.54" y2="-2.413" width="0.127" layer="21"/>
+<pad name="5" x="2.54" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-2.54" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<pad name="4" x="-2.54" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-7.62" y1="-0.762" x2="-7.62" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-7.62" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<pad name="3" x="-7.62" y="0" drill="1" diameter="1.4224"/>
+<wire x1="-12.7" y1="-0.762" x2="-12.7" y2="-2.413" width="0.127" layer="21"/>
+<wire x1="-17.78" y1="-0.762" x2="-17.78" y2="-2.413" width="0.127" layer="21"/>
+<circle x="-12.7" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<circle x="-17.78" y="0" radius="0.71841875" width="0.127" layer="21"/>
+<pad name="2" x="-12.7" y="0" drill="1" diameter="1.4224"/>
+<pad name="1" x="-17.78" y="0" drill="1" diameter="1.4224"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="KRE-8P" urn="urn:adsk.eagle:package:22383431/2" type="model">
-<packageinstances>
-<packageinstance name="KRE-8P"/>
-</packageinstances>
-</package3d>
-<package3d name="KRE-3P" urn="urn:adsk.eagle:package:22383433/2" type="model">
-<packageinstances>
-<packageinstance name="KRE-3P"/>
-</packageinstances>
-</package3d>
-<package3d name="KRE-5P" urn="urn:adsk.eagle:package:22383429/2" type="model">
-<packageinstances>
-<packageinstance name="KRE-5P"/>
-</packageinstances>
-</package3d>
-<package3d name="KRE-4P" urn="urn:adsk.eagle:package:22383432/2" type="model">
-<packageinstances>
-<packageinstance name="KRE-4P"/>
-</packageinstances>
-</package3d>
-<package3d name="KRE-6P" urn="urn:adsk.eagle:package:22383428/2" type="model">
-<packageinstances>
-<packageinstance name="KRE-6P"/>
-</packageinstances>
-</package3d>
-<package3d name="KRE-2P" urn="urn:adsk.eagle:package:22383434/3" type="model">
+<package3d name="KRE-2P" urn="urn:adsk.eagle:package:22383434/5" locally_modified="yes" type="model">
 <packageinstances>
 <packageinstance name="KRE-2P"/>
 </packageinstances>
@@ -260,7 +354,6 @@
 </symbols>
 <devicesets>
 <deviceset name="KRE-8P" prefix="IO">
-<description>KRE Conector 8P</description>
 <gates>
 <gate name="G$1" symbol="KRE-8P" x="0" y="0"/>
 </gates>
@@ -276,9 +369,6 @@
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22383431/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -286,7 +376,6 @@
 </devices>
 </deviceset>
 <deviceset name="KRE-5P" prefix="IO">
-<description>KRE Conector 5P</description>
 <gates>
 <gate name="G$1" symbol="KRE-5P" x="0" y="0"/>
 </gates>
@@ -299,9 +388,6 @@
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22383429/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -309,7 +395,6 @@
 </devices>
 </deviceset>
 <deviceset name="KRE-2P" prefix="IO">
-<description>KRE Conector 2P</description>
 <gates>
 <gate name="G$1" symbol="KRE-2P" x="0" y="0"/>
 </gates>
@@ -320,7 +405,7 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22383434/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22383434/5"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -329,7 +414,6 @@
 </devices>
 </deviceset>
 <deviceset name="KRE-4P" prefix="IO">
-<description>KRE Conector 4P</description>
 <gates>
 <gate name="G$1" symbol="KRE-4P" x="0" y="0"/>
 </gates>
@@ -341,9 +425,6 @@
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22383432/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -351,7 +432,6 @@
 </devices>
 </deviceset>
 <deviceset name="KRE-6P" prefix="IO">
-<description>KRE Conector 6P</description>
 <gates>
 <gate name="G$1" symbol="KRE-6P" x="0" y="0"/>
 </gates>
@@ -365,9 +445,6 @@
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22383428/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -375,7 +452,6 @@
 </devices>
 </deviceset>
 <deviceset name="KRE-3P" prefix="IO">
-<description>KRE Conector 3P</description>
 <gates>
 <gate name="G$1" symbol="KRE-3P" x="0" y="0"/>
 </gates>
@@ -386,9 +462,6 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22383433/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
